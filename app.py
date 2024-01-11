@@ -22,7 +22,7 @@ st.title('Mobile Price Classification')
 
 html_layout1 = """
 <br>
-<div style="background-color:blue ; padding:5px">
+<div style="background-color:#00BFFF ; padding:5px">
 <h2 style="color:white;text-align:center;font-size:35px"><b>Mobile Phone Checkup</b></h2>
 </div>
 <br>
