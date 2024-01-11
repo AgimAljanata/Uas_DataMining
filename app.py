@@ -22,14 +22,14 @@ st.title('Mobile Price Classification')
 
 html_layout1 = """
 <br>
-<div style="background-color:green ; padding:2px">
+<div style="background-color:blue ; padding:5px">
 <h2 style="color:white;text-align:center;font-size:35px"><b>Mobile Phone Checkup</b></h2>
 </div>
 <br>
 <br>
 """
 st.markdown(html_layout1,unsafe_allow_html=True)
-activities = ['Decision Tree','Model lain']
+activities = ['Decision Tree']
 option = st.sidebar.selectbox('Pilihan mu ?',activities)
 st.sidebar.header('Data spesifikasi')
 
