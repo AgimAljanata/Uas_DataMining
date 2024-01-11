@@ -23,7 +23,7 @@ st.title('Mobile Price Classification')
 html_layout1 = """
 <br>
 <div style="background-color:green ; padding:2px">
-<h2 style="color:white;text-align:center;font-size:35px"><b>Diabetes Checkup</b></h2>
+<h2 style="color:white;text-align:center;font-size:35px"><b>Mobile Phone Checkup</b></h2>
 </div>
 <br>
 <br>
@@ -45,14 +45,6 @@ if st.checkbox("Tentang Dataset"):
     st.write(data.describe())
 
 sns.set_style('darkgrid')
-
-#if st.checkbox('EDa'):
-#   pr =ProfileReport(data,explorative=True)
-#    st.header('**Input Dataframe**')
-#    st.write(data)
-#    st.write('---')
-#   st.header('**Profiling Report**')
-#    st_profile_report(pr)
 
 #train test split
 # Perbarui dataset
@@ -86,7 +78,7 @@ def user_report():
     battery_power = st.sidebar.slider('battery_power',0,20,1)
     blue = st.sidebar.slider('blue',0,200,108)
     clock_speed = st.sidebar.slider('clock_speed',0,140,40)
-    dual_sim = st.sidebar.slider('dual_sim',0,100,25)
+    dual_sim = st.sidebar.slider('dual_sim',0,2)
     fc = st.sidebar.slider('fc',0,1000,120)
     
     user_report_data = {
@@ -139,7 +131,7 @@ model_names = ['Decision Tree']
 st.subheader('Hasilnya adalah : ')
 output=''
 if user_result[0]==0:
-    output='Kamu Aman'
+    output='Hp Ini Direkomendasikan'
 else:
     output ='Kamu terkena diabetes'
 st.title(output)
